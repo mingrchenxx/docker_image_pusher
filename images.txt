@@ -1,1 +1,2 @@
 busybox:uclibc
+python:3.11
