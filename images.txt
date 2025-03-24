@@ -1,4 +1,4 @@
 busybox:uclibc
 python:3.11
 python:3.9-slim
-approachingai/ktransformers:v0.2.3post1-AVX512
+ollama/ollama:latest
