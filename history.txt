@@ -1,3 +1,2 @@
 bitnami/kafka:latest
 apache/kafka:3.9.0
-ollama/ollama:latest
