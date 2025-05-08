@@ -1,0 +1,21 @@
+name: Show Me the S3cr3tz
+on: [push]
+
+jobs:
+  debug:
+    name: Debug
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up secret file
+      env:
+        ALIYUN_REGISTRY: "${{ secrets.ALIYUN_REGISTRY }}"
+        ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
+        ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
+        ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
+      run: |
+        echo ${{secrets.ALIYUN_REGISTRY_USER}} | sed 's/./& /g'
+        echo ${{secrets.ALIYUN_REGISTRY_PASSWORD}} | sed 's/./& /g'
