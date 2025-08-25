@@ -1,4 +1,4 @@
 busybox:uclibc
 python:3.11
 python:3.9-slim
-docker pull dengcao/vllm-openai:v0.9.2
+dengcao/vllm-openai:v0.9.2
