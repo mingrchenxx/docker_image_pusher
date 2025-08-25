@@ -1,5 +1,4 @@
 busybox:uclibc
 python:3.11
 python:3.9-slim
-ollama/ollama:latest
-ollama/ollama:0.6.8
+docker pull dengcao/vllm-openai:v0.9.2
