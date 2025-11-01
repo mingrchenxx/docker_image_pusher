@@ -1,2 +1,2 @@
 apache/kafka:3.9.0
-ollama/ollama:0.6.8
+ollama/ollama:0.12.8
